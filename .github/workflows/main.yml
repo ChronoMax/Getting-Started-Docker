@@ -36,3 +36,7 @@ jobs:
             name: getting-started-github
             location: 'west europe'
             ports: '3000'
+            azure-file-volume-share-name: 'webapp-github'
+            azure-file-volume-account-name: 'maxwebapp'
+            azure-file-volume-account-key: ${{ secrets.ACCOUNT_KEY }}
+            azure-file-volume-mount-path: '/etc/todos'
